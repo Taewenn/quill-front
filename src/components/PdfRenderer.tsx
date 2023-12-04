@@ -38,7 +38,7 @@ interface PdfRendererProps {
 const PdfRenderer = ({ url }: PdfRendererProps) => {
     const { toast } = useToast();
 
-    const [numPages, setNumPages] = useState<number>();
+    const [numPages, setNumPages] = useState<number>(0);
     const [currPage, setCurrPage] = useState<number>(1);
     const [scale, setScale] = useState<number>(1);
     const [rotation, setRotation] = useState<number>(0);
